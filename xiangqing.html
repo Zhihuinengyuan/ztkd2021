@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<meta name="Keywords" content="" />
+		<meta name="Description" content="" />
+		<title>设备详情</title>
+		<style>
+			*{margin:0;padding:0;}
+			body{ background:url(img/bg_title.png) repeat-x,url(img/bg.png);}
+			nav{width:916px; height:46px; margin:50px auto 0; border-radius:5px;box-shadow:0px 0px 30px #fff;
+				background:-webkit-linear-gradient(top,rgba(41,41,41,0.75) 0%,rgba(54,54,54,0.72) 50%,rgba(23,23,23,0.94) 51%);}
+			nav ul li{list-style:none; float:left; width:130px; height:46px; border-right:1px solid #000;
+				text-align:center; line-height:46px;}
+			nav ul li:hover{background:rgba(10,5,5,.5);}
+			nav ul li.first{border-radius:5px 0 0 5px;}
+			nav ul li.last{border:none; border-radius:0px 5px 5px 0px;}
+			nav ul li a{color:#fff; font-size:14px; text-decoration:none; font-family:"微软雅黑";}
+			nav .hid1{height:0; overflow:hidden; -webkit-transition:.5s;}
+			nav .hid li{border:none; background:rgba(10,5,5,.45);}
+			nav .hid li:hover{ background:rgba(10,5,5,.7)}
+
+			nav ul li:hover .hid1{height:138px;}
+			<!--nav ul li:hover .hid2{display:block; -webkit-animation:anim 1s;}-->
+			nav ul li:hover .hid2{display:block; -webkit-transition:.5s;}
+			nav .hid2{display:none;}
+			section{width:916px; height:650px; background:#fff; border-radius:10px; margin:50px auto 40px;
+				box-shadow:0 0 5px #ccc;}
+			@-webkit-keyframes anim{
+				form{-webkit-transform:rotateY(0deg); opacity:0;}
+				to{-webkit-transform:rotateY(360deg); opacity:1;}
+			}
+			p.Copy{height:50px; color:#ccc; font-size:14px;text-align:center;font-family:"微软雅黑";}
+			p.Copy a{color:#ccc;text-decoration:none;}
+			p.Copy a:hover{color:#fff;}
+		</style>
+		<script type="text/javascript">
+		function radioShow(){
+			/*var myradio=document.getElementsByName("myradio");
+			var div=document.getElementById("c").getElementsByTagName("div");
+			for(i=0;i<div.length;i++){
+				if(myradio[i].checked){
+					div[i].style.display="block";
+				}
+				else{
+					div[i].style.display="none";
+				}
+			}*/
+		}
+</script>
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li class="first">
+					<a href="">智慧灯杆</a>
+					<!--<ul class="hid hid1">
+						<li><a href="http://www.baidu.com">HTML5</a></li>
+						<li><a href="">CSS3</a></li>
+						<li><a href="">JavaScript</a></li>
+					</ul>-->
+				</li>
+				<li><a href="">一体化电源</a></li>
+				<li><a href="">5G能源一体化机柜</a></li>
+				<li>
+					<a href="">5GBBU节能机柜</a>
+					<!--<ul class="hid hid2">
+						<li><a href="">C++</a></li>
+						<li><a href="">JAVA</a></li>
+						<li><a href="">PHP</a></li>
+					</ul>-->
+				</li>
+				<li><a href="">智能分断设备</a></li>
+				<li><a href="">差异化备电设备</a></li>
+				<li class="last"><a href="">其他</a></li>
+			</ul>
+		</nav>
+		<section>
+		<table border="1" align="center" width="550" style="margin:0 0 0 20%">
+		<tr>
+			<td>参数与控制</td>
+			<td>参考值</td>
+		</tr>
+		<tr>
+			<td>输入电压</td>
+			<td>Savings</td>
+		</tr>
+		<tr>
+			<td>直流输出电压</td>
+			<td>$100</td>
+		</tr>
+		<tr>
+			<td>电池组电压</td>
+			<td>$100</td>
+		</tr>
+		<tr>
+			<td>单体电池电压</td>
+			<td>$100</td>
+		</tr>
+		<tr>
+			<td>箱体内温度</td>
+			<td>$100</td>
+		</tr>
+		<tr>
+			<td>箱体内湿度</td>
+			<td>$100</td>
+		</tr>
+		<tr>
+			<td>分户输出电流</td>
+			<td>$100</td>
+		</tr>
+		<tr>
+			<td>分户输出功率</td>
+			<td>$100</td>
+		</tr>
+		<tr>
+			<td>分户输出电量</td>
+			<td>$100</td>
+		</tr>
+		<tr>
+			<td>1路开关控制</td>
+			<td>
+			<input name="myradio1" id="11" type="radio" value="1" checked="checked" onclick="radioShow();"/>开启   
+			<input name="myradio1" id="12" type="radio" value="2" onclick="radioShow();/">断开
+			<button type="button">	确认</button>
+			</td>
+		</tr>
+		<tr>
+			<td>2路开关控制</td>
+			<td>
+			<input name="myradio2" id="21" type="radio" value="3" checked="checked" onclick="radioShow();"/>开启
+			<input name="myradio2" id="22" type="radio" value="4" onclick="radioShow();/">断开
+			<button type="button">	确认</button>
+			</td>
+		</tr>
+		<tr>
+			<td>3路开关控制</td>
+			<td>
+			<input name="myradio3" id="31" type="radio" value="5" checked="checked" onclick="radioShow();"/>开启
+			<input name="myradio3" id="32" type="radio" value="6" onclick="radioShow();/">断开
+			<button type="button">	确认</button>
+			</td>
+		</tr>
+		<tr>
+			<td>3路同时开断</td>
+			<td>
+			<input name="myradio4" id="41" type="radio" value="7"  onclick="radioShow();"/>同时开启
+			<input name="myradio4" id="42" type="radio" value="8" onclick="radioShow();/">同时断开
+			<button type="button">	确认</button>
+			</td>
+		</tr>
+		<tr>
+			<td>3路同时开断</td>
+			<td>
+			<input name="myradio5" id="51" type="radio" value="9"  onclick="radioShow();"/>同时开启
+			<input name="myradio5" id="52" type="radio" value="10" onclick="radioShow();/">同时断开
+			<button type="button">	确认</button>
+			</td>
+		</tr>
+		</table>
+		</section>
+		<p class="Copy">版权所有:中天宽带技术有限公司 </p>
+	</body>
+</html>
